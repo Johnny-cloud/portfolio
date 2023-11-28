@@ -326,9 +326,13 @@ nav a:hover{
     font-size: 20px;
 }
 
+#contact-form textarea:focus, #contact-form input:focus{
+    outline: none;
+}
+
 #contact-form input, #contact-form textarea{
     border-bottom: solid;
-    border-bottom-color: rgb(242, 242, 105);
+    border-bottom-color: yellow;
 }
 
 #contact-form button{
