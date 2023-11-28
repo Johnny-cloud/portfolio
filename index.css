@@ -342,6 +342,12 @@ nav a:hover{
     padding: 1% 5%;
 }
 
+#contact-form button:hover{
+    background-color: rgb(228, 214, 121);
+    color: black;
+    cursor: pointer;
+}
+
 #testimonials, #resume, #contact{
     background-color: rgb(234, 232, 232);
 }
