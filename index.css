@@ -22,7 +22,7 @@ nav ul{
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
-    margin: 0;
+    margin: 10px;
 }
 
 nav  li{
@@ -194,6 +194,7 @@ nav a:hover{
 #resume .contents-container > *{
     width: 600px;
     margin: 20px;
+    margin-bottom: 50px;
     text-align: start;
 }
 
@@ -209,7 +210,16 @@ nav a:hover{
     border-color: rgb(234, 234, 134);
     padding: 15px;
     border-bottom: solid;
-    border-bottom-color: rgb(233, 233, 233);
+    border-bottom-color: aliceblue;
+}
+
+#resume .resume-download-link{
+    padding: 1% 2%;
+    background-color: rgb(240, 240, 107);
+}
+
+#resume .resume-download-link:hover{
+    background-color: gold;
 }
 
 .project{
@@ -354,4 +364,11 @@ nav a:hover{
 
 .testimonial, .project, .media{
     background-color: rgb(241, 239, 234);
+}
+
+@media screen and (max-width: 600px) {
+    nav li{
+        font-size: 15px;
+        margin: 2px;
+    }
 }
