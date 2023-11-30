@@ -363,7 +363,7 @@ nav a:hover{
 }
 
 .testimonial, .project, .media{
-    background-color: rgb(241, 239, 234);
+    background-color: rgb(227, 226, 218);
 }
 
 @media screen and (max-width: 600px) {
