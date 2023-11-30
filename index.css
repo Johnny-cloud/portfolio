@@ -3,6 +3,7 @@ body{
     padding: 0;
     margin: 0;
     text-align: center;
+    font-family:'Times New Roman', Times, serif;
 }
 
 #main-content{
@@ -28,6 +29,7 @@ nav ul{
 nav  li{
     margin: 5px;
     padding: 5px;
+    font-weight: bold;
 }
 
 li{
@@ -40,8 +42,8 @@ a{
 }
 
 nav a:hover{
-    color: rgb(67, 108, 6);
-    border-bottom-color: rgb(73, 115, 9);
+    color: white;
+    border-bottom-color: white;
     border-bottom: solid;
 }
 
@@ -59,7 +61,7 @@ nav a:hover{
 }
 
 #home, .title, .experience h1, nav{
-    background-color: rgb(234, 234, 134);
+    background-color: gold;
 }
 
 .title{
@@ -207,7 +209,7 @@ nav a:hover{
 
 #resume .contents > *{
     border-left: solid;
-    border-color: rgb(234, 234, 134);
+    border-color: gold;
     padding: 15px;
     border-bottom: solid;
     border-bottom-color: aliceblue;
@@ -224,23 +226,23 @@ nav a:hover{
 
 .project{
     border-bottom: solid;
-    border-bottom-color: rgb(240, 240, 107);
+    border-bottom-color: gold;
     border-bottom-width: 5px;
 }
 
 .project .links a{
-    color: rgb(237, 237, 114);
+    color: gold;
     padding: 2px 15px;
     background-color: black;
     border-radius: 10px;
     border: solid;
-    border-color: rgb(242, 242, 105);
+    border-color: gold;
     border-width: 2px;
     color: aliceblue;
 }
 
 .project .links a:hover{
-    background-color: rgb(242, 242, 105);
+    background-color: gold;
     color: black;
 }
 
@@ -271,8 +273,9 @@ nav a:hover{
     width: 450px;
     height: 250px;
     margin: 10px;
+    padding: 20px;
     border: solid;
-    border-color: rgb(242, 242, 105);
+    border-color: gold;
     border-width: 3px;
     border-radius: 10px;
 }
@@ -284,7 +287,7 @@ nav a:hover{
     padding: 30px 0px;
     border-radius: 15px;
     border: solid;
-    border-color: rgb(242, 242, 105);
+    border-color: gold;
     justify-content: space-evenly;
 }
 
@@ -294,7 +297,7 @@ nav a:hover{
 }
 
 .media:hover{
-    background-color: rgb(242, 242, 105);
+    background-color: gold;
 
 }
 
@@ -342,7 +345,7 @@ nav a:hover{
 
 #contact-form input, #contact-form textarea{
     border-bottom: solid;
-    border-bottom-color: yellow;
+    border-bottom-color: gold;
 }
 
 #contact-form button{
@@ -353,7 +356,7 @@ nav a:hover{
 }
 
 #contact-form button:hover{
-    background-color: rgb(228, 214, 121);
+    background-color: gold;
     color: black;
     cursor: pointer;
 }
@@ -362,8 +365,12 @@ nav a:hover{
     background-color: rgb(234, 232, 232);
 }
 
-.testimonial, .project, .media{
-    background-color: rgb(227, 226, 218);
+.project, .media{
+    background-color: rgb(234, 232, 232);
+}
+
+.testimonial{
+    background-color: white;
 }
 
 @media screen and (max-width: 600px) {
