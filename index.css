@@ -220,18 +220,12 @@ h1{
 
 .project{
     width: 450px;
-    height: 550px;
+    height: 600px;
     margin: 10px;
     border-bottom: solid;
     border-bottom-color: gold;
     border-bottom-width: 5px;
     position: relative;
-}
-
-.project .links{
-    position: absolute;
-    bottom: 15px;
-    left: 35%;
 }
 
 .project .links a{
@@ -391,4 +385,5 @@ h1{
     #home h3{
         font-size: 30px;
     }
+
 }
