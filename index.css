@@ -25,10 +25,6 @@ nav{
     padding-bottom: 0;
 }
 
-#main-content{
-    margin: auto;
-}
-
 li{
     list-style-type: none;
 }
@@ -172,13 +168,6 @@ h1{
     width: 93%;
 }
 
-.projects-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 #resume .contents-container{
     display: flex;
     flex-direction: row;
@@ -187,7 +176,7 @@ h1{
 }
 
 #resume .contents-container > *{
-    width: 600px;
+    width: 400px;
     margin: 20px;
     margin-bottom: 50px;
     text-align: start;
@@ -217,8 +206,15 @@ h1{
     background-color: gold;
 }
 
+.projects-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .project{
-    width: 450px;
+    width: 400px;
     height: 600px;
     margin: 10px;
     border-bottom: solid;
@@ -272,7 +268,7 @@ h1{
 }
 
 .testimonial{
-    width: 450px;
+    width: 400px;
     height: 270px;
     margin: 10px;
     padding: 20px;
@@ -284,7 +280,7 @@ h1{
 
 .media{
     margin: 10px;
-    width: 450px;
+    width: 400px;
     height: 100px;
     padding: 10px 0px;
     border-radius: 15px;
