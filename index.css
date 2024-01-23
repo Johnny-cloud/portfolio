@@ -5,6 +5,10 @@ body{
     text-align: center;
 }
 
+::selection{
+    background-color: gold;
+}
+
 nav{
     background-color: rgb(249, 229, 115);
     text-align: center;
