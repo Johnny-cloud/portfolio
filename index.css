@@ -323,7 +323,7 @@ h1{
     height: 100%;
 }
 
-#contact-form{
+#contactForm{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -334,30 +334,31 @@ h1{
 
 }
 
-#contact-form > *{
+#contactForm > *{
     margin: 10px;
     border: none;
     background-color: inherit;
     font-size: 20px;
 }
 
-#contact-form textarea:focus, #contact-form input:focus{
+#contactForm textarea:focus, #contactForm input:focus{
     outline: none;
+    background-color: transparent;
 }
 
-#contact-form input, #contact-form textarea{
+#contactForm input, #contactForm textarea{
     border-bottom: solid;
     border-bottom-color: gold;
 }
 
-#contact-form button{
+#contactForm button{
     background-color: black;
     width: fit-content;
     color: aliceblue;
     padding: 1% 5%;
 }
 
-#contact-form button:hover{
+#contactForm button:hover{
     background-color: gold;
     color: black;
     cursor: pointer;
