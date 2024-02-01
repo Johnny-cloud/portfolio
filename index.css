@@ -151,13 +151,14 @@ h1{
 .skill .percentage-container{
     width: 100%;
     background-color: lightgray;
-    height: 10px;
+    height: 8px;
     border-radius: 10px;
 }
 
 .p-95, .p-90, .p-93 {
     background-color:rgb(234, 234, 134);
     height: 100%;
+    border-radius: 10px;
 }
 
 .p-95{
