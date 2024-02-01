@@ -7,7 +7,7 @@ body{
 
 p{
     text-align: justify;
-    padding: 0 7px;
+    padding: 0 4px;
 }
 
 ::selection{
@@ -156,7 +156,7 @@ h1{
 .skill .percentage-container{
     width: 100%;
     background-color: lightgray;
-    height: 8px;
+    height: 7.5px;
     border-radius: 10px;
 }
 
