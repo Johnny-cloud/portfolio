@@ -7,7 +7,7 @@ body{
 
 p{
     text-align: justify;
-    padding: 0 4px;
+    padding: 0 10px;
 }
 
 ::selection{
@@ -52,7 +52,7 @@ h1{
 }
 
 #home{
-    padding: 18% 0 20%;
+    height: 900px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -77,6 +77,10 @@ h1{
 
 #home .welcome-text{
     font-size: 30px;
+}
+
+#home h3{
+    padding-top: 40%;
 }
 
 #home .name{
@@ -384,12 +388,13 @@ h1{
 
 @media screen and (max-width: 600px) {
 
-    .home-image{
-        display: none;
+    #home {
+        height: 400px;
     }
 
     #home h3{
         font-size: 20px;
+        padding-top: 15%;
     }
 
     #home .name{
