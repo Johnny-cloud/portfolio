@@ -17,6 +17,11 @@ li{
     text-align: start;
 }
 
+p::selection , h1::selection, h2::selection, h3::selection, h4::selection, h5::selection{
+    background-color: red;
+    color: white;
+}
+
 h3{
     color: red;
 }
