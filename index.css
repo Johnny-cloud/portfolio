@@ -148,6 +148,21 @@ h3{
     padding: 0 0 20px;
 }
 
+.project .links a{
+    margin: 10px;
+    border: solid;
+    border-color: red;
+    border-width: 1.5px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.project .links a:hover{
+    background-color: red;
+    color: white;
+}
+
 .project .image-container{
     height: 170px;
 }
