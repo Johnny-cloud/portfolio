@@ -1,404 +1,204 @@
 body{
-    font-size: 19px;
     padding: 0;
     margin: 0;
+    background-color: rgb(246, 246, 246);
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
-p{
-    text-align: justify;
-    padding: 0 10px;
+a{
+    color: inherit;
+    text-decoration: none;
 }
 
-::selection{
-    background-color: gold;
+li{
+    list-style-type: none;
+    text-align: start;
 }
 
-nav{
-    background-color: rgb(249, 229, 115);
-    text-align: center;
+h3{
+    color: red;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.flex-row-center{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .me-auto{
     margin: auto;
 }
 
-.me-auto a{
-    font-weight: 545;
+.navbar{
+    background-color: rgb(241, 241, 241);
 }
 
-.me-auto a:hover{
-    color: rgb(107, 79, 8);
-    border-bottom: solid;
-    border-bottom-color: rgb(112, 82, 7);
-    padding-bottom: 0;
+.nav-item{
+    font-weight: bold;
 }
 
-li{
-    list-style-type: none;
+.nav-item a:hover{
+    color: red;
 }
 
-a{ 
-    text-decoration: none;
-    color: black;
+.nav-item a:active, .nav-item li:focus{
+    color: red;
 }
 
-h1{
-    margin: 15px;
-}
 
 #main-content > *{
-    padding: 100px 0 100px;
+    padding: 50px 0;
 }
 
 #home{
-    height: 900px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-#home, .title, .experience h1{
-    background-color: gold;
-}
-
-.title{
-    width: fit-content;
-    margin: auto;
-    font-size: 20px;
-    padding: 2px 10px;
-    border-radius: 10px;
-}
-
-#home > * {
-    width: 500px;
-}
-
-#home .welcome-text{
-    font-size: 30px;
-}
-
-#home h3{
-    padding-top: 40%;
+    padding: 250px 0 200px;
 }
 
 #home .name{
-    font-size: 60px;
+    color: red;
+    font-weight: bold;
 }
 
-.home-image img{
-    width: 400px;
-    height: 400px;
-    border: solid;
-    border-color: aliceblue;
-    border-radius: 50%;
-    border-width: 10px;
+#home > *{
+    width: fit-content;
     margin: auto;
-    margin-top: -100px;
-}
-
-#about h1{
-    margin-bottom: 0px;
-    padding: 0;
-}
-
-.about-details-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: justify;
-    max-width: 1400px;
-    margin: auto;
-}
-
-.about-details-container .description{
-    max-width: 800px;
-    padding: 20px;
-}
-
-.about-details-container > *{
-    margin: auto;
-}
-
-
-
-.experience{
-    text-align: center;
-}
-
-.experience h1{
-   border-radius: 50%;
-   height: 100px;
-   width: 100px;
-}
-
-
-#skills-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    max-width: 1200px;
-    margin: auto;
-}
-
-
-.skill{
-    width: 500px;
-    padding: 20px;
-}
-
-.skill .name{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.skill .percentage-container{
-    width: 100%;
-    background-color: lightgray;
-    height: 7.5px;
-    border-radius: 10px;
-}
-
-.p-95, .p-90, .p-93 {
-    background-color:rgb(234, 234, 134);
-    height: 100%;
-    border-radius: 10px;
-}
-
-.p-95{
-    width: 95%;
-}
-
-.percentage-container .p-90{
-    width: 90%;
-}
-
-.percentage-container .p-93{
-    width: 93%;
-}
-
-#resume .contents-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#resume .contents-container > *{
-    width: 400px;
-    margin: 20px;
     margin-bottom: 50px;
-    text-align: start;
 }
 
-#resume .contents{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+#home h1{
+    max-width: 500px;
+    margin: auto;
 }
 
-#resume .contents > *{
-    border-left: solid;
-    border-color: gold;
-    padding: 15px;
+#home i{
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+#home i:hover{
+    background-color: red;
+}
+
+.skills-container > *{
+    text-align: center;
+    margin: 15px;
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 10px;
     border-bottom: solid;
-    border-bottom-color: aliceblue;
+    border-color: red;
 }
 
-#resume .resume-download-link{
-    padding: 1% 2%;
-    background-color: rgb(240, 240, 107);
+.skills-container p{
+    padding: 10px 0;
 }
 
-#resume .resume-download-link:hover{
-    background-color: gold;
+
+.resume-container > *, .project, .testimonial{
+    width: 350px;
+    padding: 10px;
+    margin: 15px;
+    background-color: white;
+    border-bottom: solid;
+    border-color: red;
 }
 
-.projects-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+.resume-container > * > * > *{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.resume-download-btn-container{
+    margin-top: 50px;
+}
+
+.resume-download-btn-container > a{
+    padding: 10px;
+    background-color: white;
+    border: solid;
+    border-radius: 1.5px;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.resume-download-link:hover{
+    background-color: red;
+    color: white;
+}
+
+
+#skills i{
+    color: red;
+    margin-right: 5px;
 }
 
 .project{
-    width: 400px;
-    height: 500px;
-    margin: 10px;
-    border-bottom: solid;
-    border-bottom-color: gold;
-    border-bottom-width: 5px;
-    position: relative;
+    padding: 0 0 20px;
 }
 
-.project .links a{
-    color: gold;
-    padding: 2px 15px;
-    background-color: black;
-    border-radius: 10px;
-    border: solid;
-    border-color: gold;
-    border-width: 2px;
-    color: aliceblue;
+.project .image-container{
+    height: 170px;
 }
 
-.project .links a:hover{
-    background-color: gold;
-    color: black;
+#about{
+    max-width: 1000px;
+    margin: auto;
 }
 
-.project-image-container{
-    width: 100%;
-    height: 40%;
-}
-
-.project-image-container img{
-    width: 100%;
-    height: 100%;
-}
-
-.project ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.project li{
-    margin: 5px 7px;
-}
-
-#testimonials-container, #social-media .container, .media{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.testimonial{
-    width: 400px;
-    height: 270px;
-    margin: 10px;
-    padding: 20px;
-    border: solid;
-    border-color: gold;
-    border-width: 3px;
-    border-radius: 10px;
-}
-
-.media{
-    margin: 10px;
-    width: 400px;
-    height: 100px;
-    padding: 10px 0px;
-    border-radius: 15px;
-    border: solid;
-    border-color: gold;
-    justify-content: space-evenly;
-}
-
-.media img{
-    width: 70px;
-    height: 70px;
-}
-
-.media:hover{
-    background-color: gold;
-
-}
-
-.media h2{
-    margin: 20px;
-}
-
-
-.horizontal-container{
-    width: 450px;
-    padding: 0;
-    background-color: grey;
-    margin-bottom: 60px;
-    border-radius: 10px;
-    height: 10px;
-}
-
-.span-horizontal{
-    width: 95%;
-    background-color: yellow;
-    height: 100%;
-}
-
-#contactForm{
+#contact form{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    max-width: 800px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 500px;
     margin: auto;
-    text-align: start;
-
-}
-
-#contactForm > *{
-    margin: 10px;
-    border: none;
     background-color: inherit;
-    font-size: 20px;
 }
 
-#contactForm textarea:focus, #contactForm input:focus{
+#contact form input, #contact form textarea, #contact form input:focus, #contact form textarea:focus{
     outline: none;
-    background-color: transparent;
-}
-
-#contactForm input, #contactForm textarea{
+    border: none;
     border-bottom: solid;
-    border-bottom-color: gold;
+    border-color: red;
+    border-width: 1px;
+    background-color: inherit;
 }
 
-#contactForm button{
-    background-color: black;
-    width: fit-content;
-    color: aliceblue;
-    padding: 1% 5%;
+#contact form > *{
+    margin: 10px 0;
+    padding: 0;
 }
 
-#contactForm button:hover{
-    background-color: gold;
-    color: black;
-    cursor: pointer;
-}
-
-#testimonials, #resume, #contact{
-    background-color: rgb(234, 232, 232);
-}
-
-.project, .media{
-    background-color: rgb(234, 232, 232);
-}
-
-.testimonial{
+#contact form button{
+    margin: 30px 0;
+    width: 200px;
+    margin: auto;
+    padding: 5px 10px;
+    border: solid;
+    border-color: red;
+    border-radius: 5px;
     background-color: white;
 }
 
-@media screen and (max-width: 600px) {
+#contact form button:hover{
+    color: white;
+    background-color: red;
+}
 
-    #home {
-        height: 400px;
+@media screen and (max-width: 700px) {
+    #home{
+        padding: 150px 0 100px;
     }
-
-    #home h3{
-        font-size: 20px;
-        padding-top: 15%;
-    }
-
-    #home .name{
-        font-size: 30px;
-    }
-
 }
