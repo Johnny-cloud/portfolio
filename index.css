@@ -1,10 +1,7 @@
 body{
-    padding: 0;
-    margin: 0;
-    background-color: rgb(246, 246, 246);
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 19px;
+    font-size: 18px;
+    background-color: rgb(242, 239, 239);
 }
 
 a{
@@ -14,21 +11,52 @@ a{
 
 li{
     list-style-type: none;
-    text-align: start;
+    text-align: justify;
 }
 
-p::selection , h1::selection, h2::selection, h3::selection, h4::selection, h5::selection{
-    background-color: red;
-    color: white;
+.bi{
+    font-size: 22px;
+    color: orange;
 }
 
 h3{
-    color: red;
+    color: orange;
 }
 
 .image-container img{
     width: 100%;
     height: 100%;
+}
+
+nav{
+    background-color: black;
+}
+
+.navbar{
+    color: orange;
+}
+
+.navbar-toggler{
+    border-color: orange;
+    border-width: 4px;
+}
+
+.me-auto{
+    margin: auto;
+}
+
+.me-auto a{
+    color: white;
+    padding: 5px;
+    margin: 5px 10px;
+    text-align: justify;
+    width: fit-content;
+}
+
+.me-auto a:hover, .me-auto a:focus, .me-auto a:active{
+    color: orange;
+    border-bottom: solid;
+    border-bottom-color: orange;
 }
 
 .flex-row-center{
@@ -38,190 +66,250 @@ h3{
     justify-content: center;
 }
 
-.me-auto{
-    margin: auto;
+.flex-row-start{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.navbar{
-    background-color: rgb(241, 241, 241);
-}
-
-.nav-item{
-    font-weight: bold;
-}
-
-.nav-item a:hover{
-    color: red;
-}
-
-.nav-item a:active, .nav-item li:focus{
-    color: red;
-}
-
-
-#main-content > *{
+.body-main-content > *{
     padding: 50px 0;
 }
 
+.dark-background{
+    background-color: rgb(237, 237, 237);
+}
+
 #home{
-    padding: 250px 0 200px;
+    height: 850px;
+    padding: 0;
+    background-image: url(https://images.unsplash.com/photo-1559163499-413811fb2344?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: black;
+    position: relative;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+
+#home .main-content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#home .main-content > *{
+    margin: 20px 0;
 }
 
 #home .name{
-    color: red;
-    font-weight: bold;
-}
-
-#home > *{
-    width: fit-content;
-    margin: auto;
-    margin-bottom: 50px;
-}
-
-#home h1{
-    max-width: 500px;
-    margin: auto;
-}
-
-#home i{
-    font-size: 25px;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-}
-
-#home i:hover{
-    background-color: red;
-}
-
-.skills-container > *{
-    text-align: center;
-    margin: 15px;
-    background-color: white;
-    color: black;
-    width: 300px;
-    padding: 10px;
-    border-bottom: solid;
-    border-color: red;
-}
-
-.skills-container p{
-    padding: 10px 0;
+    font-size: 60px;
+    color: orange;
 }
 
 
-.resume-container > *, .project, .testimonial{
-    width: 350px;
-    padding: 10px;
-    margin: 15px;
-    background-color: white;
-    border-bottom: solid;
-    border-color: red;
-}
-
-.resume-container > * > * > *{
-    margin: 20px 0;
+#about .main-content > *, #resume .education > *{
+    margin: 20px 15px;
     text-align: justify;
-}
-
-.resume-download-btn-container{
-    margin-top: 50px;
-}
-
-.resume-download-btn-container > a{
-    padding: 10px;
-    background-color: white;
-    border: solid;
-    border-radius: 1.5px;
-    border-color: red;
-    border-radius: 5px;
-}
-
-.resume-download-link:hover{
-    background-color: red;
-    color: white;
-}
-
-
-#skills i{
-    color: red;
-    margin-right: 5px;
-}
-
-.project{
-    padding: 0 0 20px;
-}
-
-.project .links a{
-    margin: 10px;
-    border: solid;
-    border-color: red;
-    border-width: 1.5px;
-    background-color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-
-.project .links a:hover{
-    background-color: red;
-    color: white;
-}
-
-.project .image-container{
-    height: 170px;
-}
-
-#about{
-    max-width: 1000px;
-    margin: auto;
-}
-
-#contact form{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    max-width: 500px;
-    margin: auto;
-    background-color: inherit;
-}
-
-#contact form input, #contact form textarea, #contact form input:focus, #contact form textarea:focus{
-    outline: none;
-    border: none;
-    border-bottom: solid;
-    border-color: red;
-    border-width: 1px;
-    background-color: inherit;
-}
-
-#contact form > *{
-    margin: 10px 0;
     padding: 0;
 }
 
-#contact form button{
-    margin: 30px 0;
-    width: 200px;
-    margin: auto;
-    padding: 5px 10px;
+
+#about .details{
+    max-width: 700px;;
+}
+
+#about .skills-container > *{
+    margin: 15px;
     border: solid;
-    border-color: red;
+    border-color: orange;
+    border-width: 2px;
     border-radius: 5px;
-    background-color: white;
+    padding: 10px;
+    width: 300px;
 }
 
-#contact form button:hover{
+#about .image-container{
+    width: 470px;
+    height: 600px;
+    padding: 0;
+    margin: auto 15px;
+}
+
+#resume{
+    background-image: url(https://images.unsplash.com/photo-1539376248633-cf94fa8b7bd8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#resume .main-content{
+    filter: grayscale(0);
+}
+
+#resume .contents > *{
+    margin: 30px 0;
+}
+
+#resume .resume-download-link{
+    padding: 10px 15px;
+    background-color: orange;
     color: white;
-    background-color: red;
+    
 }
 
-@media screen and (max-width: 700px) {
-    body{
-        font-size: 16px;
-    }
+#resume .download-link-container{
+    margin-top: 30px;
+}
+
+#resume .resume-download-link .bi {
+    color: white;
+}
+
+#resume .content{
+    border: solid;
+    border-color: orange;
+    border-width: 2px;
+    border-radius: 5px;
+    text-align: justify;
+    padding: 5px;
+    margin: 15px;
+    width: 350px;
+}
+
+#resume .content .details > *{
+    margin-bottom: 40px;
+}
+
+
+.project{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 30px 0;
+}
+
+.project > *{
+    margin: 15px;
+}
+
+.project .image-container{
+    width: 550px;
+    height: 350px;
+    margin: auto 15px;
+}
+
+.project .details{
+    text-align: justify;
+    padding: 5px;
+    max-width: 600px;
+    border: solid;
+    border-color: orange;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+.project .details ul{
+    padding: 0;
+}
+
+.project .links a{
+    background-color: orange;
+    color: white;
+    text-align: start;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.project .links a .bi{
+    color: white;
+}
+
+#testimonials{
+    background-image: url(https://images.unsplash.com/photo-1488998427799-e3362cec87c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial{
+    width: 350px;
+    margin: 15px;
+    border: solid;
+    border-color: orange;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 5px;
+    background-color: rgb(239, 234, 234);
+    color: black;
+}
+
+.testimonial p{
+    text-align: justify;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+form > *{
+    margin: 10px 0;
+}
+
+form input, form textarea{
+    border: none;
+    border-bottom: solid;
+    border-width: 2px;
+    background-color: inherit;
+}
+
+form input:focus, form textarea:focus{
+    outline: none;
+}
+
+form button{
+    padding: 5px 10px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
     #home{
-        padding: 150px 0 100px;
+        height: 380px;
+    }
+
+    #home .name{
+        font-size: 40px;
+    }
+
+    #about .image-container, #resume .image-container{
+        width: 350px;
+        height: 400px;
+    }
+
+    .project .image-container{
+        width: 360px;
+        height: 230px;
     }
 }
