@@ -1,7 +1,7 @@
 body{
     text-align: center;
     font-size: 18px;
-    background-color: rgb(242, 239, 239);
+    background-color: rgb(242, 242, 242);
 }
 
 a{
@@ -119,6 +119,10 @@ nav{
     color: orange;
 }
 
+#home .bi{
+    font-size: 30px;
+}
+
 
 #about .main-content > *, #resume .education > *{
     margin: 20px 15px;
@@ -142,7 +146,7 @@ nav{
 }
 
 #about .image-container{
-    width: 470px;
+    width: 450px;
     height: 600px;
     padding: 0;
     margin: auto 15px;
@@ -198,7 +202,7 @@ nav{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
 .project > *{
@@ -209,6 +213,11 @@ nav{
     width: 550px;
     height: 350px;
     margin: auto 15px;
+    border-radius: 5px;
+}
+
+.project img{
+    border-radius: 5px;
 }
 
 .project .details{
@@ -267,6 +276,7 @@ form{
     flex-wrap: wrap;
     justify-content: center;
     max-width: 700px;
+    min-width: 350px;
     margin: auto;
 }
 
@@ -288,10 +298,18 @@ form input:focus, form textarea:focus{
 form button{
     padding: 5px 10px;
     width: 200px;
-    background-color: black;
+    background-color: orange;
     color: white;
     border: none;
     border-radius: 5px;
+}
+
+form button .bi{
+    color: white;
+}
+
+#resume a:hover, .project a:hover, #contact button:hover{
+    background-color: gold;
 }
 
 @media screen and (max-width: 600px) {
@@ -303,9 +321,9 @@ form button{
         font-size: 30px;
     }
 
-    #about .image-container, #resume .image-container{
+    #about .image-container{
         width: 350px;
-        height: 400px;
+        height: 450px;
     }
 
     .project .image-container{
