@@ -1,7 +1,7 @@
 body{
     text-align: center;
     font-size: 18px;
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(234, 233, 233);
 }
 
 a{
@@ -198,21 +198,19 @@ nav{
 
 
 .project{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 25px 0;
+  width: 450px;
+  height: fit-content;
+  margin: 15px;
+  border-bottom: solid;
+  border-color: orange;
+  border-width: 2px;
+  padding-bottom: 20px;
+  background-color: white;
 }
 
-.project > *{
-    margin: 15px;
-}
 
 .project .image-container{
-    width: 550px;
-    height: 350px;
-    margin: auto 15px;
+    height: 250px;
     border-radius: 5px;
 }
 
@@ -222,13 +220,7 @@ nav{
 
 .project .details{
     text-align: justify;
-    padding: 5px;
-    max-width: 600px;
-    border: solid;
-    border-color: orange;
-    border-width: 2px;
-    border-radius: 5px;
-    padding: 10px 5px;
+    padding: 7px 5px;
 }
 
 .project .details ul{
@@ -322,12 +314,15 @@ form button .bi{
     }
 
     #about .image-container{
-        width: 350px;
+        width: 360px;
         height: 450px;
     }
 
-    .project .image-container{
+    .project{
         width: 360px;
-        height: 230px;
+    }
+
+    .project .image-container{
+        height: 200px;
     }
 }
