@@ -111,16 +111,27 @@ h3{
     margin: 20px 0;
 }
 
-#home .name{
-    font-size: 60px;
-    color: orange;
-    font-weight: bold;
-}
-
 #home .bi{
     font-size: 30px;
 }
 
+#home h1, #home h4{
+    font-family: sans-serif;
+    /* choosing our font */
+    background: rgb(171,132,11);
+    background: radial-gradient(circle, rgba(171,132,11,1) 0%, rgba(33,4,9,1) 100%);
+    background-clip: text;
+    /*add this line, it defines how far the background should extend within an element, here we set it to text */
+    -webkit-background-clip: text;
+    /* add this line, for browsers compatibility */
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+#home .name{
+    font-size: 60px;
+    color: orange;
+}
 
 #about .main-content > *, #resume .education > *{
     margin: 20px 15px;
