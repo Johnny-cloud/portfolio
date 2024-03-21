@@ -1,12 +1,18 @@
 body{
+    background-color: whitesmoke;
     text-align: center;
-    font-size: 18px;
-    background-color: rgb(241, 241, 241);
+}
+
+/* General stylings */
+
+.image-container img{
+    width: 100%;
+    height: 100%;
 }
 
 a{
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 li{
@@ -14,47 +20,13 @@ li{
     text-align: justify;
 }
 
+ul{
+    padding: 0;
+}
+
 .bi{
     font-size: 22px;
-    color: orange;
-}
-
-h3{
-    color: orange;
-}
-
-.image-container img{
-    width: 100%;
-    height: 100%;
-}
-
-
-.navbar{
-    color: orange;
-    background-color: rgb(239, 239, 239);
-}
-
-.navbar-toggler{
-    border-color: orange;
-    border-width: 4px;
-}
-
-.me-auto{
-    margin: auto;
-}
-
-.me-auto a{
-    color: black;
-    padding: 5px;
-    margin: 5px 10px;
-    text-align: justify;
-    width: fit-content;
-}
-
-.me-auto a:hover, .me-auto a:focus, .me-auto a:active{
-    color: orange;
-    border-bottom: solid;
-    border-bottom-color: orange;
+    color: red;
 }
 
 .flex-row-center{
@@ -64,280 +36,178 @@ h3{
     justify-content: center;
 }
 
-.flex-row-start{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.body-main-content > *{
+.body-main-content > * {
     padding: 50px 0;
 }
 
-.dark-background{
-    background-color: rgb(237, 237, 237);
+.navbar{
+    background-color: rgb(229, 228, 228);
+}
+
+.me-auto{
+    margin: auto;
+}
+
+.me-auto a{
+    color: black;
+    padding: 5px;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.me-auto a:hover{
+    color: red;
 }
 
 #home{
-    height: 850px;
-    padding: 0;
-    background-image: url(https://images.unsplash.com/photo-1488998427799-e3362cec87c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    color: rgb(71, 69, 69);
-}
-.overlay{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(225, 225, 225);
-    opacity: 0;
+    padding: 20% 0 22%;
 }
 
-#home .main-content{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#home .main-content > *{
-    margin: 20px 0;
+#home .name{
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
 }
 
 #home .bi{
     font-size: 30px;
-}
-
-#home h1, #home h4{
-    font-family: sans-serif;
-    /* choosing our font */
-    background: rgb(171,132,11);
-    background: radial-gradient(circle, rgba(171,132,11,1) 0%, rgba(33,4,9,1) 100%);
-    background-clip: text;
-    /*add this line, it defines how far the background should extend within an element, here we set it to text */
-    -webkit-background-clip: text;
-    /* add this line, for browsers compatibility */
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-}
-
-#home .name{
-    font-size: 60px;
-    color: orange;
-}
-
-#about .main-content > *, #resume .education > *{
-    margin: 20px 15px;
-    text-align: justify;
-    padding: 0;
-}
-
-
-#about .details{
-    max-width: 730px;;
-}
-
-#about .skills-container > *{
-    margin: 15px;
-    border: solid;
-    border-color: orange;
-    border-width: 2px;
-    border-radius: 5px;
+    background-color: rgb(223, 221, 221);
     padding: 10px;
-    width: 320px;
+    border-radius: 5px;
 }
 
-#about .image-container{
-    width: 500px;
-    height: 650px;
-    padding: 0;
-    margin: auto 15px;
-}
-
-#about img{
-    border-radius: 10px;
-    filter: grayscale(0.8);
-}
-
-#resume{
-    background-image: url(https://images.unsplash.com/photo-1539376248633-cf94fa8b7bd8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#resume .main-content{
-    filter: grayscale(0);
-}
-
-#resume .contents > *{
+#home .main-content > *{
     margin: 30px 0;
 }
 
-#resume .resume-download-link{
-    padding: 10px 15px;
-    background-color: orange;
-    color: white;
-    
+#about{
+    max-width: 800px;
+    margin: auto;
 }
 
-#resume .download-link-container{
-    margin-top: 30px;
+#about p{
+    text-align: justify;
 }
 
-#resume .resume-download-link .bi {
-    color: white;
-}
-
-#resume .content{
-    border: solid;
-    border-color: orange;
+.skills-container > *, .project, .resume-container > *, .testimonial{
+    width: 330px;
+    margin: 15px;
+    background-color: rgb(241, 239, 239);
+    text-align: justify;
+    padding: 10px;
+    border-bottom: solid;
+    border-color: red;
     border-width: 2px;
     border-radius: 5px;
-    text-align: justify;
-    padding: 5px;
-    margin: 15px;
-    width: 350px;
 }
 
-#resume .content .details > *{
-    margin-bottom: 40px;
+.resume-container > * > *{
+    margin: 20px 0;
 }
 
+.download-link-container{
+    margin: 30px 0;
+}
+
+.resume-download-link{
+    border: solid;
+    border-color: red;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.resume-download-link:hover{
+    background-color: red;
+    color: white;
+}
+
+.resume-download-link:hover .bi{
+    color: white;
+}
+
+#projects{
+    max-width: 1200px;
+    margin: auto;
+}
 
 .project{
-  width: 450px;
-  height: fit-content;
-  margin: 15px;
-  border-bottom: solid;
-  border-color: orange;
-  border-width: 2px;
-  padding-bottom: 20px;
-  background-color: rgb(255, 255, 255);
-}
-
-
-.project .image-container{
-    height: 250px;
-    border-radius: 5px;
-}
-
-.project img{
-    border-radius: 5px;
-    filter: grayscale(0.6);
-}
-
-.project .details{
-    text-align: justify;
-    padding: 7px 5px;
-}
-
-.project .details ul{
+    width: 360px;
     padding: 0;
 }
 
+.project .image-container{
+    height: 200px;
+}
+
+.project ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+.project li{
+    margin: 0 10px;
+}
+
+.project .details{
+    padding: 20px 7px;
+}
+
 .project .links a{
-    background-color: orange;
-    color: white;
-    text-align: start;
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-
-.project .links a .bi{
-    color: white;
-}
-
-#testimonials{
-    background-image: url(https://images.unsplash.com/photo-1488998427799-e3362cec87c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    height: fit-content;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.testimonial{
-    width: 350px;
-    margin: 15px;
     border: solid;
-    border-color: orange;
-    border-radius: 5px;
-    border-width: 2px;
+    border-color: red;
     padding: 5px;
-    background-color: rgb(241, 241, 241);
-    color: black;
+    margin: 0 7px;
+    border-width: 2px;
+    border-radius: 5px;
 }
 
-.testimonial p{
-    text-align: justify;
+.project .links a:hover{
+    background-color: red;
+    color: white;
 }
 
-form{
+.project .links a:hover .bi{
+    color: white;
+}
+
+#contact form{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 700px;
-    min-width: 350px;
+    min-width: 360px;
     margin: auto;
 }
 
-form > *{
-    margin: 10px 0;
-}
-
-form input, form textarea{
+#contact form input, #contact form textarea{
     border: none;
     border-bottom: solid;
     border-width: 2px;
     background-color: inherit;
 }
 
-form input:focus, form textarea:focus{
+#contact form input:focus, #contact form textarea:focus{
     outline: none;
 }
 
-form button{
-    padding: 5px 10px;
-    width: 200px;
-    background-color: orange;
-    color: white;
+#contact form > *{
+    margin: 15px 0;
+}
+
+#contact form button{
+    background-color: rgb(228, 224, 224);
+    padding: 5px 20px;
+    width: 300px;
+    margin: auto;
     border: none;
     border-radius: 5px;
 }
 
-form button .bi{
-    color: white;
-}
-
-#resume a:hover, .project a:hover, #contact button:hover{
-    background-color: gold;
-}
-
 @media screen and (max-width: 600px) {
-    #home{
-        height: 380px;
-    }
-
     #home .name{
         font-size: 30px;
-    }
-
-    #about .image-container{
-        width: 360px;
-        height: 450px;
-    }
-
-    .project{
-        width: 360px;
-    }
-
-    .project .image-container{
-        height: 200px;
     }
 }
