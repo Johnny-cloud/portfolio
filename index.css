@@ -58,6 +58,9 @@ ul{
 .me-auto a:hover{
     color: red;
 }
+h3{
+    color: red;
+}
 
 #home{
     padding: 20% 0 22%;
@@ -101,7 +104,7 @@ ul{
     border-radius: 5px;
 }
 
-.resume-container > * > *{
+.resume-container .details > * {
     margin: 20px 0;
 }
 
@@ -131,7 +134,7 @@ ul{
 }
 
 .project{
-    width: 360px;
+    width: 400px;
     padding: 0;
 }
 
@@ -143,7 +146,7 @@ ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly; 
+    justify-content: flex-start; 
 }
 
 .project li{
@@ -198,7 +201,7 @@ ul{
 }
 
 #contact form button{
-    background-color: rgb(228, 224, 224);
+    background-color: rgb(215, 213, 213);
     padding: 5px 20px;
     width: 300px;
     margin: auto;
@@ -206,8 +209,19 @@ ul{
     border-radius: 5px;
 }
 
+#contact form button:hover{
+    background-color: black;
+    color: white;
+}
+
 @media screen and (max-width: 600px) {
     #home .name{
         font-size: 30px;
     }
+}
+
+@media screen and (max-width: 400px) {
+   .project{
+    width: 370px;
+   }
 }
