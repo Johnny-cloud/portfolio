@@ -1,14 +1,8 @@
 body{
-    background-color: whitesmoke;
     text-align: center;
-    font-size: 17px;
-}
-
-/* General stylings */
-
-.image-container img{
-    width: 100%;
-    height: 100%;
+    background-color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
 }
 
 a{
@@ -16,18 +10,9 @@ a{
     color: inherit;
 }
 
-li{
-    list-style-type: none;
-    text-align: justify;
-}
-
-ul{
-    padding: 0;
-}
-
 .bi{
     font-size: 22px;
-    color: red;
+    margin: 0 10px;
 }
 
 .flex-row-center{
@@ -35,99 +20,120 @@ ul{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px 0;
 }
 
-.body-main-content > * {
-    padding: 50px 0;
-}
-
-.navbar{
-    background-color: rgb(229, 228, 228);
+.image-container img{
+    width: 100%;
+    height: 100%;
 }
 
 .me-auto{
     margin: auto;
 }
 
-.me-auto a{
-    color: black;
-    padding: 5px;
-    margin: 0 10px;
-    font-size: 18px;
+.navbar{
+    background-color: whitesmoke;
 }
 
-.me-auto a:hover{
-    color: red;
+.me-auto a{
+    color: black;
+    margin: 0 10px;
+    padding: 5px;
 }
-h3{
-    color: red;
+
+.main-content > *{
+    padding: 50px 0;
 }
+
 
 #home{
     padding: 20% 0 22%;
+    font-size: 19px;
+    background: rgb(231,227,227);
+    background: linear-gradient(137deg, rgba(245, 245, 245,1) 53%, rgba(20,20,20,1) 100%);
 }
 
-#home .name{
-    font-size: 50px;
-    font-weight: bold;
-    color: red;
-}
-
-#home .bi{
-    font-size: 30px;
-    background-color: rgb(223, 221, 221);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-#home .main-content > *{
-    margin: 30px 0;
-}
-
-#about{
-    max-width: 800px;
-    padding: 7px;
-    margin: auto;
-}
-
-#about p{
-    text-align: justify;
-}
-
-.skills-container > *, .project, .resume-container > *, .testimonial{
-    width: 330px;
+.what-i-do-container > *{
+    width: 350px;
+    height: 250px;
     margin: 15px;
-    background-color: rgb(241, 239, 239);
-    text-align: justify;
-    padding: 10px;
-    border-bottom: solid;
-    border-color: red;
+    border: solid;
+    border-color: rgb(210, 210, 210);
+    border-radius: 10px;
     border-width: 2px;
-    border-radius: 5px;
+    padding: 50px 10px;
+    text-align: justify;
+    background-color: white;
 }
 
-.resume-container .details > * {
-    margin: 20px 0;
+.what-i-do-container .bi{
+    font-size: 50px;
+    margin: auto 10px;
 }
 
-.download-link-container{
+.skills-container{
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.skill-container{
+    width: 360px;
+    height: 8px;
+    background-color: grey;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.skill{
+    width: 90%;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.resume-contents-container > *{
+    max-width: 400px;
+    margin: 15px;
+    border: solid;
+    border-color: grey;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px 10px;
+}
+
+.resume-link{
     margin: 30px 0;
 }
 
-.resume-download-link{
-    border: solid;
-    border-color: red;
-    border-radius: 5px;
+.resume-link a{
     padding: 10px 15px;
+    width: 250px;
+    margin: auto;
+    background-color: white;
+    border: solid;
+    border-color: grey;
+    border-width: 2px;
+    border-radius: 10px;
 }
 
-.resume-download-link:hover{
-    background-color: red;
+.resume-link a:hover{
+    background-color: black;
+    border-color: black;
     color: white;
 }
 
-.resume-download-link:hover .bi{
-    color: white;
+#resume h3 > * {
+    margin: auto 5px;
+}
+
+#resume .bi-award, #resume .bi-book{
+    font-size: 50px;
 }
 
 #projects{
@@ -136,94 +142,85 @@ h3{
 }
 
 .project{
-    width: 400px;
-    padding: 0;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    margin: 15px;
 }
 
 .project .image-container{
+    width: 350px;
     height: 200px;
+    background-color: white;
+    border-radius: 10px;
 }
 
-.project ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start; 
+.project img{
+    border-radius: 10px;
+    filter: grayscale(0.8);
 }
 
-.project li{
-    margin: 0 10px;
+.project .links{
+    padding: 20px 0;
 }
 
-.project .details{
-    padding: 20px 7px;
+.project h6{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
-.project .links a{
-    border: solid;
-    border-color: red;
-    padding: 5px;
-    margin: 0 7px;
-    border-width: 2px;
-    border-radius: 5px;
+.project a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 10px;
 }
 
-.project .links a:hover{
-    background-color: red;
+.project .image-container a{
+    padding: 0;
+    margin: 0;
+}
+
+.project a:hover{
+    background-color: black;
     color: white;
 }
 
-.project .links a:hover .bi{
-    color: white;
-}
 
-#contact form{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 700px;
+form{
+    max-width: 650px;
     min-width: 360px;
     margin: auto;
 }
 
-#contact form input, #contact form textarea{
+form > *{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form > * > *{
+    margin: 15px 0;
+}
+
+form input, form textarea{
     border: none;
     border-bottom: solid;
     border-width: 2px;
     background-color: inherit;
 }
 
-#contact form input:focus, #contact form textarea:focus{
+form input:focus, form textarea:focus{
     outline: none;
 }
 
-#contact form > *{
-    margin: 15px 0;
-}
-
-#contact form button{
-    background-color: rgb(215, 213, 213);
-    padding: 5px 20px;
+form button{
     width: 300px;
     margin: auto;
-    border: none;
-    border-radius: 5px;
-}
-
-#contact form button:hover{
+    padding: 10px;
     background-color: black;
+    border: none;
+    border-radius: 10px;
     color: white;
-}
-
-@media screen and (max-width: 600px) {
-    #home .name{
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-   .project{
-    width: 370px;
-   }
 }
