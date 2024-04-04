@@ -288,8 +288,9 @@ background: linear-gradient(90deg, rgba(71,7,138,1) 0%, rgba(7,135,127,1) 100%);
     border-radius: 10px;
     width: 300px;
     margin: 30px auto;
-    background: rgb(219,196,244);
-    background: linear-gradient(90deg, rgba(219,196,244,1) 0%, rgba(187,241,238,1) 100%);
+    background: rgb(76,2,157);
+    background: linear-gradient(90deg, rgba(76,2,157,1) 0%, rgba(14,108,103,1) 100%);
+    color: white;
 }
 
 
