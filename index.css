@@ -234,6 +234,7 @@ background: linear-gradient(90deg, rgba(81,30,122,1) 0%, rgba(15,131,143,1) 100%
     position: absolute;
     bottom: 0;
     left: 40px;
+    margin-top: 30px;
 }
 
 .project .links a{
@@ -300,6 +301,10 @@ background: linear-gradient(90deg, rgba(71,7,138,1) 0%, rgba(7,135,127,1) 100%);
     
     .project .details{
         width: 330px;
+    }
+
+    form{
+        width: 350px;
     }
     
 }
