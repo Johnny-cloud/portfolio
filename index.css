@@ -41,6 +41,17 @@ li{
     margin: auto;
 }
 
+.me-auto a{
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.me-auto a:hover{
+    color: navy;
+}
+
 .main-content > * {
     margin: 50px auto;
     padding: 30px 0;
