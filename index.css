@@ -54,8 +54,8 @@ h1, h2, h3{
 
 .hero{
     padding: 5% 0;
-    background: rgb(156,89,210);
-    background: linear-gradient(90deg, rgb(106, 61, 143) 0%, rgb(4, 98, 105) 100%);
+    background: rgb(91,2,133);
+    background: linear-gradient(90deg, rgba(91,2,133,1) 0%, rgba(6,131,124,1) 100%);
     color: white;
 }
 
@@ -102,9 +102,10 @@ h1, h2, h3{
     margin: auto;
 }
 
-.hero .find-me{
-    margin: 20px 0;
+.hero  .find-me{
+    margin: 20px;
 }
+
 
 .hero .links a img{
     width: 40px;
@@ -307,6 +308,7 @@ background: linear-gradient(90deg, rgba(71,7,138,1) 0%, rgba(7,135,127,1) 100%);
     background: linear-gradient(90deg, rgba(76,2,157,1) 0%, rgba(14,108,103,1) 100%);
     color: white;
 }
+
 
 
 @media screen and (max-width: 600px) {
