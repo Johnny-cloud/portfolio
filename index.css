@@ -328,8 +328,9 @@ background: linear-gradient(90deg, rgba(71,7,138,1) 0%, rgba(7,135,127,1) 100%);
     animation: fade-in 2s;
 }
 
-.skills-container:nth-child(1){
-   background-color: yellow;
+.roll-in-skill{
+    animation: roll-in 4s;
+    opacity: 1;
 }
 
 @keyframes fade-in {
@@ -340,7 +341,6 @@ background: linear-gradient(90deg, rgba(71,7,138,1) 0%, rgba(7,135,127,1) 100%);
         scale: 1;
     }
 }
-
 
 
 
