@@ -12,11 +12,11 @@ a{
 p{
     line-height: 1.8rem;
     text-align: justify;
-    padding: 0 10px;
+    padding: 5px;
 }
 
 section{
-    padding: 50px 0;
+    padding: 50px 0px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -46,6 +46,7 @@ li{
     align-items: center;
     width: 75vw;
     margin: auto;
+    padding: 0 10px;
 }
 
 .image-container img{
@@ -318,9 +319,6 @@ nav{
     background-color: gold;
 }
 
-.contact .grid-container{
-    padding: 0 10px;
-}
 
 .contact form > * {
     display: flex;
