@@ -1,8 +1,7 @@
 body{
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
-    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
 }
 
 a{
@@ -10,22 +9,43 @@ a{
     color: inherit;
 }
 
+p{
+    line-height: 1.8rem;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+section{
+    padding: 50px 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 10px;
+}
+
+h6{
+    width: fit-content;
+    margin: auto;
+    background-color: gold;
+    padding: 2px 5px;
+    color: black;
+    font-size: 1rem;
+}
+
 li{
     list-style-type: none;
+    text-align: start;
 }
 
-.flex-row-center{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.flex-start{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+    align-items: center;
+    width: 75vw;
+    margin: auto;
 }
 
 .image-container img{
@@ -33,329 +53,383 @@ li{
     height: 100%;
 }
 
-.navbar{
+.dark-background{
     background-color: whitesmoke;
+}
+
+nav{
+    background-color: white;
 }
 
 .me-auto{
     margin: auto;
+    padding: 10px 0;
 }
 
 .me-auto a{
-    margin: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    width: fit-content;
+    color: inherit;
+    font-size: 18px;
+    margin: 0 10px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .me-auto a:hover{
-    color: navy;
-}
-
-.main-content > * {
-    margin: 50px auto;
-    padding: 30px 0;
-    max-width: 1500px;
-    border-radius: 10px;
-}
-
-h1, h2, h3{
-    color: white;
+    color: gold;
 }
 
 .hero{
-    padding: 5% 0;
-    background: rgb(91,2,133);
-    background: linear-gradient(90deg, rgba(91,2,133,1) 0%, rgba(6,131,124,1) 100%);
-    color: white;
+    background-color: gold;
+    padding: 10% 0 13%;
 }
 
-.hero .hello img{
-    width: 40px;
-    height: 40px;
+
+.hero span{
+    font-size: 3rem;
 }
 
-.hero .name{
-    font-size: 35px;
-    font-weight: bold;
+.hero .text p{
+    text-align: center;
 }
 
-.hero .text{
-    text-align: start;
-    padding: 30px 10px;
-}
-
-.hero .contents{
-    max-width: 900px;
-    margin: auto;
+.hero .links{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.hero .contents > * {
-    margin: auto 15px;
-    padding: 20px 10px;
+
+.hero .links > * {
+    margin: 0 10px;
 }
 
-.hero .image-holder{
-    width: 360px;
-    height: 360px;
-    border-radius: 100%;
-    padding: 0;
-    background-color: whitesmoke;
+.hero .links .works-link a{
+    padding: 15px 30px;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
+.hero .links .contact-link a{
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.hero .links .contact-link i{
+    font-size: 1.2rem;
+    margin: 0 5px;
 }
 
 .hero .image-container{
-    width: 300px;
-    height: 300px;
+    background-color: black;
+    width: 70%;
     margin: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
 }
 
-.hero  .find-me{
-    margin: 20px;
-}
-
-
-.hero .links a img{
-    width: 40px;
-    height: 40px;
-    margin: auto;
-}
-
-.hero .links a{
-    margin: 7px;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    background-color: whitesmoke;
-    padding-top: 15px;
-}
-
-.about{
-    background: rgb(5,153,144);
-background: linear-gradient(90deg, rgba(5,153,144,1) 0%, rgba(115,13,143,1) 100%);
-}
-
-.about .flex-row-center > *{
-    margin: 15px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.about .description{
-    max-width: 700px;
-    padding: 30px 15px;
-    margin: auto 15px;
-    text-align: justify;
-}
-
-.about .image-holder{
-    width: 280px;
-    height: 280px;
-    border-radius: 100%;
-}
-
-.about .image-container{
-    width: 220px;
-    height: 220px;
-}
-
-.skills{
-    background: rgb(21,117,109);
-    background: linear-gradient(90deg, rgba(21,117,109,1) 0%, rgba(49,10,116,1) 100%);
-}
-
- .skills .flex-row-center{
-    max-width: 900px;
-    margin: auto;
-}
-
-.skill{
-    width: 130px;
-    height: 130px;
-    margin: 15px;
-    border-radius: 100%;
-    padding-top: 20px;
+.hero img{
+    width: 93%;
+    height: 93%;
+    border-radius: 50%;
     background-color: white;
 }
 
-.skill img{
-    width: 60px;
-    height: 60px;
+.about .grid-container{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about .description{
+    text-align: start;
+    grid-column: span 2;
+}
+
+.about .years-of-experience h1{
+    font-size: 80px;
+    background-color: gold;
+    width: fit-content;
+    margin: auto;
+    border-radius: 50%;
 }
 
 
-.what-i-do{
-    background: rgb(81,30,122);
-background: linear-gradient(90deg, rgba(81,30,122,1) 0%, rgba(15,131,143,1) 100%);
+.skills-section{
+    display: grid;
+    gap: 20px;
 }
 
-.what-i-do h3{
-    color: black;
+.skill .skill-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.what-i-do img{
-    width: 100px;
-    height: 100px;
+.outer-skill-content{
+    height: 9px;
+    width: 100%;
+    background-color: grey;
+    border-radius: 20px;
+    margin-top: 10px;
 }
 
-.what-i-do .flex-row-center > * {
-    width: 350px;
-    height: 300px;
-    margin: 15px;
-    padding: 15px;
-    background-color: whitesmoke;
-    color: black;
-    border-radius: 10px;
-}
-
-.what-i-do p{
-    text-align: justify;
-}
-
-.projects{
-    background: rgb(7,138,127);
-    background: linear-gradient(90deg, rgba(7,138,127,1) 0%, rgba(91,7,135,1) 100%);
+.inner-skill-content{
+    height: 100%;
+    width: 90%;
+    background-color: gold;
+    border-radius: inherit;
 }
 
 .project{
-    background-color: whitesmoke;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 15px;
-}
-
-.project .image-container{
-    width: 380px;
-    height: 220px;
-}
-
-.project img{
-    border-radius: 10px;
+    text-align: start;
+    position: relative;
+    background-color: white;
 }
 
 .project .details{
-    padding: 20px 10px;
-    height: 400px;
-    width: 380px;
-    text-align: justify;
-    position: relative;
+    padding: 30px 10px;
 }
 
-.project h6{
-    font-weight: bold;
-}
-
-.project .details > * {
+.project ul{
     margin: 15px 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, auto);
+    gap: 10px;
 }
 
-.project .links{
-    position: absolute;
-    bottom: 0;
-    left: 40px;
-    margin-top: 30px;
+.project li{
+    margin: 0 5px;
 }
 
 .project .links a{
     margin: 0 10px;
-    padding: 10px 15px;
-    background-color: rgba(6, 8, 108, 0.792);
-    color: white;
-    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: gold;
 }
 
-.project ul{
-    padding: 0;
+.project .links i{
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+.project .image-container{
+    aspect-ratio: 5 / 3;
+}
+
+.what-i-do i{
+    font-size: 60px;
+    text-align: center;
+    margin: auto;
+    color: gold;
+}
+
+.what-i-do .icon-holder, .what-i-do h3{
+    text-align: center;
+}
+
+.what-i-do .grid-container{
+    gap: 50px;
+}
+
+.service{
+    text-align: start;
+}
+
+.service .details{
+    padding: 20px 10px;
+}
+
+.resume h3, .resume h4{
+    margin-bottom: 10px;
+}
+
+.resume .contents, .resume h2{
+    text-align: start;
+}
+
+.resume .contents{
+    border-left: solid;
+    border-color: gold;
+    border-width: 2px;
+    padding:10px;
+}
+
+.resume .contents > *{
+    padding: 10px 5px;
+    border-bottom: solid;
+    border-color: rgb(183, 182, 182);
+    border-width: 1px;
+}
+
+.resume .skills h2{
+    text-align: center;
+}
+
+.resume .download-link{
+    margin: 20px 0;
+}
+
+.resume .download-link a{
+    border: solid;
+    border-width: 2px;
+    padding: 15px 30px;
+}
+
+.resume .download-link a:hover{
+    background-color: black;
+    color: white;
+}
+
+.testimonials{
+    background-color: rgb(150, 150, 150);
+    color: white;
+}
+
+.testimony{
+    max-width: 800px;
+    margin: 80px  auto;
+    font-size: 1.3rem;
+}
+
+.testimony p{
+    line-height: 2.5rem;
+}
+
+.testimony .image-container{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: black;
+    margin: auto;
+}
+
+.testimony img{
+    border-radius: 50%;
+    filter: grayscale(0.8);
+    background-color: white;
 }
 
 .contact{
-    background: rgb(71,7,138);
-background: linear-gradient(90deg, rgba(71,7,138,1) 0%, rgba(7,135,127,1) 100%);
+    text-align: start;
+    background-color: gold;
 }
 
-.contact form{
-    max-width: 500px;
-    min-width: 350px;
-    margin: auto;
-    background-color: whitesmoke;
-    border: none;
-    border-radius: 10px;
+.contact .grid-container{
+    padding: 0 10px;
 }
 
 .contact form > * {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .contact form > * > * {
-    padding: 5px 0;
     margin: 5px 0;
 }
 
-.contact form input, .contact form textarea{
+.contact form div > input, .contact form div > textarea{
     border: none;
     border-bottom: solid;
     border-width: 2px;
+    border-color: rgb(129, 129, 129);
     background-color: inherit;
 }
 
-.contact form input:focus, .contact form textarea:focus{
+.contact form div > input:focus, .contact form div > textarea:focus{
     outline: none;
 }
 
 .contact form button{
-    border: none;
-    border-radius: 10px;
-    width: 300px;
-    margin: 30px auto;
-    background: rgb(76,2,157);
-    background: linear-gradient(90deg, rgba(76,2,157,1) 0%, rgba(14,108,103,1) 100%);
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: black;
     color: white;
+    border: none;
 }
 
+.contact .contact-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 
+.contact .contact-links > * {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
 
-
-@media(prefers-reduced-motion: no-preference){
-    .hidden{
-        opacity: 0; 
+@media screen and (max-width: 1700px) {
+    .what-i-do .grid-container{
+        gap: 20px;
     }
-    
-    .show{
-        opacity: 1;
-        animation: fade-in 2s;
+
+    .what-i-do .grid-container, .skills .grid-container, .projects .grid-container{
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     }
-    
-        
-    @keyframes fade-in {
-        from {
-            scale: .5;
-        }
-        to {
-            scale: 1;
-        }
+
+    .grid-container{
+        width: 85vw;
     }
 }
 
+@media screen and (max-width: 1500px) {
 
-@media screen and (max-width: 600px) {
-    .project .image-container{
-        width: 330px;
-        height: 180px;
-    }
-    
-    .project .details{
-        width: 330px;
+    .hero .image-container{
+        margin: auto;
     }
 
-    form{
-        width: 350px;
+    .resume .grid-container{
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr))
     }
-    
+
+    .what-i-do .grid-container, .skills .grid-container, .projects .grid-container{
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .hero .image-section{
+        grid-row-start: 1;
+    }
+
+    .hero .grid-container > * {
+        grid-column: span 2;
+    }
+
+    .hero .image-container{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .about .years-of-experience{
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid-container, .resume .grid-container{
+        width: 100vw;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .about .years-of-experience h1{
+        font-size: 60px;
+    }
+
+    .hero .image-container{
+        width: 75%;
+    }
 }

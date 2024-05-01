@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Option 1: Include in HTML -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <!-- Option 1: Include in HTML -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="./index.css" rel="stylesheet"/>
     <title>John Kipruto</title>
 </head>
@@ -26,13 +23,16 @@
                 <a class="nav-link"  href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link"  href="#services">Services</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link"  href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link"  href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#testimonies">Testimonies</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link"  href="#contact">Contact</a>
@@ -43,36 +43,40 @@
 
       <div class="main-content">
 
-        <section class="hero">
-            <div class="contents">
-                <div class="text" id="home">
-                    <p class="hello">Hello <img src="./images/wave.png" alt="hand wave" /></p>
-                    <p>I am <span class="name">JOHN KIPRUTO</span></p>
-                    <p><h5>FULL-STACK SOFTWARE DEVELOPER</h5></p>
+        <section class="hero" id="home">
+            <div class="grid-container">
+                <div class="text" >
+                    <p><h1>Hi, I'm JOHN KIPRUTO</h1></p>
+                    <p>
+                        <span
+                          class="txt-rotate"
+                          data-period="300"
+                          data-rotate='[ "Designer", "Developer", "Freelancer" ]'
+                        ></span>
+                        ,
+                    </p>
+                    <p><h3>based in Nairobi, Nairobi Kenya</h3></p>
+                    <div class="links">
+                        <div class="works-link"><a href="#projects">View My Works</a></div>
+                        <div class="contact-link"><a href="#contact">Contact me</a> <i class="bi bi-arrow-down-circle"></i></div>
+                    </div>
                 </div>
-                <div class="image-holder hidden">
-                    <div class="image-container"><img src="./images/freelancer.png" alt="freelancer" /></div>
-                </div>
-                <div class="find-me">
-                    <h5>Find me on</h5>
-                    <div class="links flex-start">
-                        <a class="hidden" href="https://github.com/Johnny-cloud?tab=repositories" target="_blank"><img src="./images/github.png"/></a>
-                        <a class="hidden" href="https://www.linkedin.com/in/john-kipruto-81005121b/" target="_blank"><img src="./images/linkedin.png"/></a>
-                        <a class="hidden" href="mailto:johnkipruto157@gmial.com"><img src="./images/gmail.png"/></a>
+
+                <div class="image-section">
+                    <div class="image-container">
+                        <img src="./businessman.png" alt="my image"/>
                     </div>
                 </div>
                 
             </div>
         </section>
         
-        <section class="about dark-background">
-            <h1 id="about">Get To Know Me</h1>
-            <div class="flex-row-center">
-                <div class="image-holder hidden">
-                    <div class="image-container"><img src="./images/coding.png" alt="coding" /></div>
-                </div>
+        <section class="about" id="about">
+            <h6>About</h6>
+            <h1>Get To Know Me</h1>
+            <div class="grid-container">
                 
-                <div class="description hidden">
+                <div class="description">
                     <p>Hi! I’m a web developer and I love all things tech.
                          When I’m not knee-deep in code, I’m probably reading up on the latest development trends or 
                          practicing my sketching (or both).
@@ -86,85 +90,220 @@
                          holds for me in the world of tech. Thanks for reading!  
                     </p>
                 </div>
+
+                <div class="years-of-experience">
+                    <span ><h1>2+</h1></span>
+                    <p><h2>Years Of <b>Experience</b></h2></p>
+                </div>
             </div>
             
         </section>
 
-        <section class="skills">
-            <h2 id="skills">My Skills</h2>
-            <div class="skills-container flex-row-center">
-                <div class="skill hidden">
-                    <img src="./images/js.png" alt="icon" />
-                    <p>Javascript</p>
+
+        <section class="what-i-do dark-background" id="services">
+            <h6>Services</h6>
+            <h1>My Services</h1>
+            <div class="grid-container">
+                <div class="service">
+                    <div class="icon-holder"><i class="bi bi-pencil"></i></div>
+                    <div class="details">
+                        <h3>Web Design</h3>
+                        <p>I am well skilled at web design,utilizing fully my knowledge of figma design to come up with intuitive UIs
+                        </p> 
+                    </div>
+                   
                 </div>
-                <div class="skill hidden">
-                    <img src="./images/node-js.png" alt="icon" />
-                    <p>Node js</p>
+                <div class="service">
+                    <div class="icon-holder"><i class="bi bi-pc-display-horizontal"></i></div>
+                    <div class="details">
+                       <h3>Web Development</h3>
+                        <p>With my knowledge of various web programming language, I can code both the front-end and back-end of a web app
+                        </p> 
+                    </div>
+                    
                 </div>
-                <div class="skill hidden">
-                    <img src="./images/programing.png" alt="icon" />
-                    <p>Express js</p>
+                <div class="service">
+                    <div class="icon-holder"><i class="bi bi-search"></i></div>
+                    <div class="details">
+                        <h3>SEO Optimization</h3>
+                        <p>With the knowledge of search engines, I can optimize the searching of a website for different browser engines
+                        </p> 
+                    </div>
+                    
                 </div>
-                <div class="skill hidden">
-                    <img src="./images/leaf.png" alt="icon" />
-                    <p>MongoDB</p>
+                <div class="service">
+                    <div class="icon-holder"><i class="bi bi-database"></i></div>
+                    <div class="details">
+                        <h3>Database Administration</h3>
+                        <p>I am skilled at working with both the structured(SQL) and unstructered(No-SQL) databases. From backups to sharding, I can ensure the security of the in databases.
+                        </p> 
+                    </div>
+                    
                 </div>
-                <div class="skill hidden">
-                    <img src="./images/physics.png" alt="icon" />
-                    <p>React</p>
+                <div class="service">
+                    <div class="icon-holder"><i class="bi bi-palette"></i></div>
+                    <div class="details">
+                        <h3>UI Design</h3>
+                        <p>I create sleek UIs to ensure a good user experience as they interact with the application. What I consider the most while building application is the UI and UX of the application.
+                        </p> 
+                    </div>
+                    
                 </div>
-                <div class="skill hidden">
-                    <img src="./images/python.png" alt="icon" />
-                    <p>Python</p>
-                </div>
-                <div class="skill hidden">
-                    <img src="./images/django.png" alt="icon" />
-                    <p>Django</p>
-                </div>
-                <div class="skill hidden">
-                    <img src="./images/mysql.png" alt="icon" />
-                    <p>MySQL</p>
-                </div>
-                <div class="skill hidden">
-                    <img src="./images/social.png" alt="icon" />
-                    <p>Docker</p>
+                <div class="service">
+                    <div class="icon-holder"><i class="bi bi-code-slash"></i></div>
+                    <div class="details">
+                        <h3>Code Optimization</h3>
+                        <p>With my knowledge in data structures and algorithms, I ensure that the code of an application is optimized to ensure efficiency of an application.
+                        </p> 
+                    </div>
+                    
                 </div>
             </div>
         </section>
 
-        <section class="what-i-do">
-            <h1 id="services">My Services</h1>
-            <div class="flex-row-center">
-                <div class="hidden">
-                    <div class="image-holder"><img src="./images/responsive-design.png" alt="" /></div>
-                    <h3>Web Design</h3>
-                    <p>I am well skilled at web design,utilizing fully my knowledge of figma design to come up with intuitive UIs
-                    </p>
+        <section class="resume" id="resume">
+            <h6>Resume</h6>
+            <h1>A Summary of My Resume</h1>
+            <div class="grid-container">
+                <div>
+                    <h2>My Education</h2>
+                    <div class="contents">
+                        <div>
+                            <h3>BSC. Computer Science</h3>
+                            <h4>Egerton University / 2017 - 2022</h4>
+                            <p>I undertook my undergraduate studies in Egerton university where I graduated with a 2<sup>nd</sup> class upper</p>
+                        </div>
+                        <div>
+                            <h3>Software Egineering</h3>
+                            <h4>Moringa School</h4>
+                            <p>I did my full-stack software engineering course in Moringa School where I learnt to use different technologies to create both the front-end and back-end of an application</p>
+                        </div>
+                        <div>
+                            <h3>High School</h3>
+                            <h4>Litein Boys</h4>
+                            <p>I attended Litein Boys high school as part of my 8.4.4 curriculum.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden">
-                    <div class="image-holder"><img src="./images/app-development.png" alt="" /></div>
-                    <h3>Web Development</h3>
-                    <p>With my knowledge of various web programming language, I can code both the front-end and back-end of a web app
-                    </p>
+
+                <div>
+                    <h2>My Experience</h2>
+                    <div class="contents">
+                        <div>
+                            <h3>Freelance</h3>
+                            <h4>Remote / On Site</h4>
+                            <p>I worked as a Freelancer both on site and remote for different companies where I was able to improve my skills profesionally.</p>
+                        </div>
+                        <div>
+                            <h3>IT Intern</h3>
+                            <h4>KETEPA</h4>
+                            <p>I did my internship at KETEPA in the IT department where I worked on their networking infrastructure and troublshooting different software issues.</p>
+                        </div>
+                        <div>
+                            <h3>Freelance</h3>
+                            <h4>Remote / On Site</h4>
+                            <p>I worked as a Freelancer both on site and remote for different companies where I was able to improve my skills profesionally.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden">
-                    <div class="image-holder"><img src="./images/search-engine.png" alt="" /></div>
-                    <h3>SEO Optimization</h3>
-                    <p>With the knowledge of search engines, I can optimize the searching of a website for different browser engines
-                    </p>
+            </div>
+            <section class="skills" id="skills">
+                <h2>My Skills</h2>
+                <div class="grid-container">
+                  <div class="skills-section">
+                    <div class="skill">
+                        <div class="skill-detail">
+                            <div>Javascript</div>
+                            <div>90%</div>
+                        </div>
+                        <div class="outer-skill-content">
+                            <div class="inner-skill-content"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-detail">
+                            <div>React.js</div>
+                            <div>90%</div>
+                        </div>
+                        <div class="outer-skill-content">
+                            <div class="inner-skill-content"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-detail">
+                            <div>Node.js / Express.js</div>
+                            <div>90%</div>
+                        </div>
+                        <div class="outer-skill-content">
+                            <div class="inner-skill-content"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-detail">
+                            <div>MongoDB</div>
+                            <div>90%</div>
+                        </div>
+                        <div class="outer-skill-content">
+                            <div class="inner-skill-content"></div>
+                        </div>
+                    </div>
+                  </div>
+    
+                  <div class="skills-section">
+                    <div class="skill">
+                        <div class="skill-detail">
+                            <div>Python</div>
+                            <div>90%</div>
+                        </div>
+                        <div class="outer-skill-content">
+                            <div class="inner-skill-content"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-detail">
+                            <div>Django / Django REST Framework</div>
+                            <div>90%</div>
+                        </div>
+                        <div class="outer-skill-content">
+                            <div class="inner-skill-content"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-detail">
+                            <div>MySQL</div>
+                            <div>90%</div>
+                        </div>
+                        <div class="outer-skill-content">
+                            <div class="inner-skill-content"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-detail">
+                            <div>Docker</div>
+                            <div>90%</div>
+                        </div>
+                        <div class="outer-skill-content">
+                            <div class="inner-skill-content"></div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
+            </section>
+            <div class="download-link">
+                <a href="./John_kipruto_resume.pdf" download>Download CV</a>
             </div>
         </section>
 
-        <section class="projects">
-            <h1 id="projects">My Recent Works</h1>
-            <div class="flex-row-center">
+        <section class="projects dark-background" id="projects">
+            <h6>Projects</h6>
+            <h1>My Recent Works</h1>
+            <div class="grid-container">
 
-                <div class="project hidden">
+                <div class="project">
                     <div class="image-container"><a target="_blank" href="https://fit-stay.vercel.app/"><img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></a></div>
                     <div class="details">
                         <div>
-                            <h6>FITSTAY</h6>
+                            <h5>FITSTAY</h5>
                         </div>
                         <div>
                             <p>FitStay is a web application that helps users find the right fitness programme based on their different schedules</p>
@@ -185,11 +324,11 @@
                     
                 </div>
 
-                <div class="project hidden">
+                <div class="project">
                     <div class="image-container"><a target="_blank" href="https://baraka-boutique-chepseon.vercel.app/"><img src="https://images.unsplash.com/photo-1537832816519-689ad163238b?q=80&w=2059&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></a></div>
                     <div class="details">
                         <div>
-                            <h6>BARAKA BOUTIQUE</h6>
+                            <h5>BARAKA BOUTIQUE</h5>
                         </div>
                         <div>
                             <p>Baraka Boutique is an ecommerce website where users can search and purchase latest fashion trends and brands.</p>
@@ -210,11 +349,11 @@
                     
                 </div>
 
-                <div class="project hidden">
+                <div class="project">
                     <div class="image-container"><a target="_blank" href="https://fooddi.vercel.app/"><img src="https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></a></div>
                     <div class="details">
                         <div>
-                            <h6>FOODI</h6>
+                            <h5>FOODI</h5>
                         </div>
                         <div>
                             <p>Foodi is an ecommerce where users can search and purchase different food types, organic and fresh from the garden.</p>
@@ -235,11 +374,11 @@
                     
                 </div>
 
-                <div class="project hidden">
+                <div class="project">
                     <div class="image-container"><a target="_blank" href="https://movie-hub-mi.vercel.app/"><img src="https://plus.unsplash.com/premium_photo-1682125771198-f7cbed7cb868?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></a></div>
                     <div class="details">
                         <div>
-                            <h6>MOVIE HUB</h6>
+                            <h5>MOVIE HUB</h5>
                         </div>
                         <div>
                             <p>Movie Hub is a website showcasing various movies with different genres from comedy to romance to action...</p>
@@ -262,25 +401,63 @@
             </div>
         </section>
 
-        <section class="contact">
-            <h1 id="contact">Lets Get In Touch</h1>
-            <form class="hidden" method="post" action="mailto:johnkipruto157@gmail.com">
-                <div>
-                    <label for="name">Your name</label>
-                    <input  id="name"/>
+        <section class="testimonials" id="testimonies">
+            <h6>Testimonies</h6>
+            <h1 >What Clients Say</h1> 
+            <div class="testimony">
+                <p>I can't say enough about the excellent work that John has done on our website. 
+                    He took a below-average website and transformed it into an appealing and informative website. 
+                    It was an absolute pleasure to work with him.</p>
+                <div class="customer-details">
+                    <div class="image-container"><img src="./businessman.png" alt="person"/></div>
+                    <p><h5>Tom</h5></p>
                 </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="grid-container">
                 <div>
-                    <label for="email">Your email</label>
-                    <input  id="email"/>
+                    <h1>Lets Get In Touch</h1>
+                    <p>I enjoy discussing new projects and design challenges. 
+                        Please share as much info, as possible so we can get the most out of our first catch-up.
+                    </p>
+                    <div>
+                        <p><b>Living in</b></p>
+                        <p>Nairobi, Nairobi Kenya</p>
+                    </div>
+                    <div>
+                        <p><b>Email</b></p>
+                        <p>johnkipruto157@gmail.com</p>
+                    </div>
+                    <div class="contact-links">
+                        <i class="bi bi-whatsapp"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-github"></i>
+                    </div>
                 </div>
+
                 <div>
-                    <label for="message">Your message</label>
-                    <textarea  id="message"></textarea>
+                    <h1>Estimate Your Project</h1>
+                    <form method="post" action="mailto:johnkipruto157@gmail.com">
+                        <div>
+                            <label for="name">Your name</label>
+                            <input  id="name"/>
+                        </div>
+                        <div>
+                            <label for="email">Your email</label>
+                            <input  id="email"/>
+                        </div>
+                        <div>
+                            <label for="message">Your message</label>
+                            <textarea  id="message"></textarea>
+                        </div>
+                        <div>
+                            <button>Send Message</button>
+                        </div>
+                    </form>
                 </div>
-                <div>
-                    <button>Send Message</button>
-                </div>
-            </form>
+            </div>
         </section>
 
 
