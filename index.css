@@ -42,10 +42,10 @@ li{
 
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     gap: 30px;
     align-items: center;
-    width: 75vw;
+    width: 80vw;
     margin: auto;
     padding: 0 10px;
 }
@@ -370,13 +370,14 @@ nav{
         gap: 20px;
     }
 
-    .what-i-do .grid-container, .skills .grid-container, .projects .grid-container{
+    .what-i-do .grid-container, .skills .grid-container{
         grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     }
 
     .grid-container{
         width: 85vw;
     }
+   
 }
 
 @media screen and (max-width: 1500px) {
@@ -389,7 +390,7 @@ nav{
         grid-template-columns: repeat(auto-fit, minmax(420px, 1fr))
     }
 
-    .what-i-do .grid-container, .skills .grid-container, .projects .grid-container{
+    .what-i-do .grid-container, .skills .grid-container{
         grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     }
 }
